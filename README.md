@@ -64,10 +64,20 @@ developing your own process.
 
   - How I debugged:
 
+    - Checked rails log, found issue is on line 10 in toys controller
+
+      - Issue was Toys vs Toy
+
 - Update the number of likes for a toy
 
   - How I debugged:
 
+    - Checked controller for update, missing render json line
+
 - Donate a toy to Goodwill (and delete it from our database)
 
   - How I debugged:
+
+    - Checked rails log, found issue is there is no DELETE route present
+
+      - Added destroy route to routes.rb
